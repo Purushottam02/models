@@ -1,0 +1,13 @@
+.label {
+  margin: 9px 10px 29px -2px;
+  display: flex;
+  justify-content: space-between;
+  .title {
+    margin-left: 1rem;
+    font-family: Source Sans Pro;
+  }
+  .subtitle {
+    color: aqua;
+    margin-right: 3%;
+  }
+}
