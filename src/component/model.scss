@@ -7,51 +7,68 @@
         width: 108px;
         margin-left: 1rem;
       }
-      .inputbox {
-        border: solid 2px gray;
-        display: inline;
-        width: 195px;
-        height: 38px;
-        border-radius: 4px;
-        input {
-          outline: none;
-          border: none;
-          height: 33px;
+      .division {
+        display: flex;
+        flex-direction: column;
+        .box {
+          display: flex;
+          .inputbox {
+            border: solid 2px gray;
+            display: inline;
+            width: 195px;
+            height: 38px;
+            border-radius: 4px;
+            input {
+              outline: none;
+              border: none;
+              height: 33px;
+            }
+            input:invalid {
+              background-color: red;
+            }
+            .unit {
+              margin: -2.8%;
+            }
+          }
+          .range {
+            margin-top: 3px;
+            font-size: small;
+            visibility: hidden;
+          }
+          .inputbox:focus-within {
+            border-color: blue;
+            .range {
+              visibility: visible;
+            }
+          }
+
+          .hover {
+            height: 22px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            display: inline-block;
+            margin: 10px 0 0 5px;
+            font-family: Avenir;
+            text-align: center;
+            .tooltip {
+              visibility: hidden;
+              position: absolute;
+              z-index: 1;
+              width: 100px;
+              color: white;
+              font-size: 12px;
+              background-color: #192733;
+              border-radius: 10px;
+              padding: 10px 15px 10px 15px;
+            }
+          }
         }
-        input:invalid {
-          background-color: red;
+
+        .hover:hover .tooltip {
+          visibility: visible;
         }
-        .unit {
-          margin: -2.8%;
-        }
-      }
-      .inputbox:focus-within {
-        border-color: blue;
-      }
-      .hover {
-        height: 22px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: red;
-        position: relative;
-        display: inline-block;
-        margin: 10px 0 0 5px;
-        font-family: Avenir;
-        text-align: center;
-        .tooltip {
-          visibility: hidden;
-          position: absolute;
-          z-index: 1;
-          width: 100px;
-          color: white;
-          font-size: 12px;
-          background-color: #192733;
-          border-radius: 10px;
-          padding: 10px 15px 10px 15px;
-        }
-      }
-      .hover:hover .tooltip {
-        visibility: visible;
       }
     }
   }

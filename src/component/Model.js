@@ -7,42 +7,85 @@ function Model() {
       <div className="inputs">
         <div className="latitutde-inputs">
           <div className="label">Latitude</div>
-          <div className="inputbox">
-            <input></input>
+          <div className="division">
+            <div className="box">
+              <div className="inputbox">
+                <input />
+                <span className="unit"></span>
+                <div className="range">Max()to Min()</div>
+              </div>
+              <div className="hover">
+                !<span className="tooltip">invalid</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="inputs">
         <div className="latitutde-inputs">
           <div className="label">Longitude</div>
-          <div className="inputbox">
-            <input  type="Number"/>
+          <div className="division">
+            <div className="box">
+              <div className="inputbox">
+                <input />
+                <span className="unit"></span>
+                <div className="range">Max()to Min()</div>
+              </div>
+              <div className="hover">
+                !<span className="tooltip">invalid</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="inputs">
         <div className="latitutde-inputs">
           <div className="label">Tilt</div>
-          <div className="inputbox">
-            <input/><span className="unit">deg</span>
+          <div className="division">
+            <div className="box">
+              <div className="inputbox">
+                <input />
+                <span className="unit">deg</span>
+                <div className="range">Max()to Min()</div>
+              </div>
+              <div className="hover">
+                !<span className="tooltip">invalid</span>
+              </div>
+            </div>
           </div>
-        <div className="hover">!<span className="tooltip">invalid</span></div>
-
         </div>
       </div>
       <div className="inputs">
         <div className="latitutde-inputs">
           <div className="label">Azimuth</div>
-          <div className="inputbox">
-            <input/><span>deg</span>
+          <div className="division">
+            <div className="box">
+              <div className="inputbox">
+                <input />
+                <span className="unit">deg</span>
+                <div className="range">Max()to Min()</div>
+              </div>
+              <div className="hover">
+                !<span className="tooltip">invalid</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="inputs">
         <div className="latitutde-inputs">
           <div className="label">Height (AGL)</div>
-          <div className="inputbox">
-            <input/><span>m</span>
+          <div className="division">
+            <div className="box">
+              <div className="inputbox">
+                <input />
+                <span className="unit">m</span>
+                <div className="range">Max()to Min()</div>
+              </div>
+              <div className="hover">
+                !<span className="tooltip">invalid</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
